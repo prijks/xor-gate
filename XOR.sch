@@ -1,0 +1,289 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 60FA2ED3
+P 8350 2350
+F 0 "J1" H 8458 2531 50  0000 C CNN
+F 1 "Power" H 8458 2440 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8350 2350 50  0001 C CNN
+F 3 "~" H 8350 2350 50  0001 C CNN
+	1    8350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 60FA3B47
+P 8550 2350
+F 0 "#PWR0101" H 8550 2200 50  0001 C CNN
+F 1 "VCC" H 8565 2523 50  0000 C CNN
+F 2 "" H 8550 2350 50  0001 C CNN
+F 3 "" H 8550 2350 50  0001 C CNN
+	1    8550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60FA456E
+P 8550 2450
+F 0 "#PWR0102" H 8550 2200 50  0001 C CNN
+F 1 "GND" H 8555 2277 50  0000 C CNN
+F 2 "" H 8550 2450 50  0001 C CNN
+F 3 "" H 8550 2450 50  0001 C CNN
+	1    8550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60FA4F7B
+P 8550 2350
+F 0 "#FLG0101" H 8550 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 8550 2478 50  0000 L CNN
+F 2 "" H 8550 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8550 2350
+	0    1    1    0   
+$EndComp
+Connection ~ 8550 2350
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60FA5577
+P 8550 2450
+F 0 "#FLG0102" H 8550 2525 50  0001 C CNN
+F 1 "PWR_FLAG" V 8550 2578 50  0000 L CNN
+F 2 "" H 8550 2450 50  0001 C CNN
+F 3 "~" H 8550 2450 50  0001 C CNN
+	1    8550 2450
+	0    1    1    0   
+$EndComp
+Connection ~ 8550 2450
+$Comp
+L power:VCC #PWR0103
+U 1 1 60FA6086
+P 3500 1500
+F 0 "#PWR0103" H 3500 1350 50  0001 C CNN
+F 1 "VCC" H 3515 1673 50  0000 C CNN
+F 2 "" H 3500 1500 50  0001 C CNN
+F 3 "" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60FA63F9
+P 3500 3500
+F 0 "#PWR0104" H 3500 3250 50  0001 C CNN
+F 1 "GND" H 3505 3327 50  0000 C CNN
+F 2 "" H 3500 3500 50  0001 C CNN
+F 3 "" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 60FA855E
+P 3500 1750
+F 0 "R3" H 3568 1796 50  0000 L CNN
+F 1 "1000" H 3568 1705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 3540 1740 50  0001 C CNN
+F 3 "~" H 3500 1750 50  0001 C CNN
+	1    3500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 60FA9765
+P 2500 2500
+F 0 "Q1" H 2690 2546 50  0000 L CNN
+F 1 "PN2222A" H 2690 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 2700 2425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 2500 2500 50  0001 L CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q2
+U 1 1 60FAA278
+P 2500 3000
+F 0 "Q2" H 2690 3046 50  0000 L CNN
+F 1 "PN2222A" H 2690 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 2700 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 2500 3000 50  0001 L CNN
+	1    2500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q3
+U 1 1 60FAAC55
+P 4000 3000
+F 0 "Q3" H 4190 3046 50  0000 L CNN
+F 1 "PN2222A" H 4190 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4200 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4000 3000 50  0001 L CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q4
+U 1 1 60FAB3F5
+P 5500 3000
+F 0 "Q4" H 5690 3046 50  0000 L CNN
+F 1 "PN2222A" H 5690 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5700 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 5500 3000 50  0001 L CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 60FABBA5
+P 2150 2500
+F 0 "R1" V 1945 2500 50  0000 C CNN
+F 1 "10000" V 2036 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 2190 2490 50  0001 C CNN
+F 3 "~" H 2150 2500 50  0001 C CNN
+	1    2150 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 60FAC52B
+P 2150 3000
+F 0 "R2" V 1945 3000 50  0000 C CNN
+F 1 "10000" V 2036 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 2190 2990 50  0001 C CNN
+F 3 "~" H 2150 3000 50  0001 C CNN
+	1    2150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 60FAC9E8
+P 3650 3000
+F 0 "R4" V 3445 3000 50  0000 C CNN
+F 1 "10000" V 3536 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 3690 2990 50  0001 C CNN
+F 3 "~" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 60FACFBF
+P 5150 3000
+F 0 "R5" V 4945 3000 50  0000 C CNN
+F 1 "10000" V 5036 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 5190 2990 50  0001 C CNN
+F 3 "~" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60FB72C6
+P 4500 2350
+F 0 "D1" V 4539 2232 50  0000 R CNN
+F 1 "LED" V 4448 2232 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4500 2350 50  0001 C CNN
+F 3 "~" H 4500 2350 50  0001 C CNN
+	1    4500 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60FB915F
+P 1700 2500
+F 0 "SW1" H 1700 2785 50  0000 C CNN
+F 1 "SW_Push" H 1700 2694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1700 2700 50  0001 C CNN
+F 3 "~" H 1700 2700 50  0001 C CNN
+	1    1700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 60FB9C37
+P 1700 3000
+F 0 "SW2" H 1700 3285 50  0000 C CNN
+F 1 "SW_Push" H 1700 3194 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1700 3200 50  0001 C CNN
+F 3 "~" H 1700 3200 50  0001 C CNN
+	1    1700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2200 4500 2000
+Wire Wire Line
+	4500 2000 3500 2000
+Wire Wire Line
+	1500 2500 1500 3000
+Connection ~ 1500 2500
+Wire Wire Line
+	1900 2500 2000 2500
+Wire Wire Line
+	1900 3000 2000 3000
+Wire Wire Line
+	2600 2700 2600 2800
+Wire Wire Line
+	1900 2500 1900 2150
+Wire Wire Line
+	1900 2150 3500 2150
+Wire Wire Line
+	3500 2150 3500 3000
+Connection ~ 1900 2500
+Wire Wire Line
+	1900 3000 1900 3350
+Wire Wire Line
+	1900 3350 5000 3350
+Wire Wire Line
+	5000 3350 5000 3000
+Connection ~ 1900 3000
+Wire Wire Line
+	5600 3200 4100 3200
+Wire Wire Line
+	2600 3200 3500 3200
+Connection ~ 4100 3200
+Wire Wire Line
+	3500 3500 3500 3200
+Connection ~ 3500 3200
+Wire Wire Line
+	3500 3200 4100 3200
+Wire Wire Line
+	4100 2800 4100 2650
+Wire Wire Line
+	4100 2650 4500 2650
+Wire Wire Line
+	4500 2650 4500 2500
+Wire Wire Line
+	4500 2650 5600 2650
+Wire Wire Line
+	5600 2650 5600 2800
+Connection ~ 4500 2650
+Wire Wire Line
+	2600 2300 2600 2000
+Wire Wire Line
+	3500 2000 3500 1900
+Wire Wire Line
+	3500 2000 2600 2000
+Connection ~ 3500 2000
+Wire Wire Line
+	3500 1500 3500 1600
+Wire Wire Line
+	3500 1500 1500 1500
+Wire Wire Line
+	1500 1500 1500 2500
+Connection ~ 3500 1500
+$EndSCHEMATC
