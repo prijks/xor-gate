@@ -29,4 +29,4 @@ The buttons should only fit in one direction.
 
 ## Caveat
 
-I have sent this board out for manufacture (July 24, 2021) but have not received it yet, so do not know yet if it actually works.
+The board works, but this is not necessarily the best TTL XOR design, since I am not an electrical engineer.
